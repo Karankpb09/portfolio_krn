@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Karan Babar — Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Karan Babar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-2">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light" aria-label="Toggle theme">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-section">
+    <div class="container py-5">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-4 text-center">
+          <div class="profile-glow d-inline-block">
+            <img src="c:\Users\karan\Pictures\profiles\WhatsApp Image 2025-08-28 at 20.31.11_e8f65e0c.jpg" alt="Karan profile" class="profile-img shadow-lg">
+          </div>
+          <div class="mt-3 d-none d-lg-block">
+            <small class="text-white-50">Second year MCA • Graduating 2026</small>
+          </div>
+        </div>
+
+        <div class="col-lg-8 text-center text-lg-start">
+          <h1 class="display-5 fw-bold mb-2">Hello, I'm <span class="accent">Karan Babar</span></h1>
+          <p class="lead mb-3"><span id="typewriter" class="typewriter" data-text='["Enthusiastic MCA Student", "Web Developer", "Data Analyst", "Learner & Problem Solver"]'></span></p>
+
+          <div class="d-flex flex-column flex-sm-row gap-2 gap-sm-3 align-items-center">
+            <a href="#projects" class="btn btn-primary btn-lg">See My Work</a>
+
+            <div class="social-links d-flex gap-2">
+              <a href="mailto:karan@example.com" class="btn btn-outline-light btn-sm" id="copyEmailBtn" title="Copy email"><i class="bi bi-envelope-fill"></i> Email</a>
+              <a href="https://github.com/Karankpb09" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm"><i class="bi bi-github"></i> GitHub</a>
+              <a href="https://www.linkedin.com/in/karan-kpb9101/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm"><i class="bi bi-linkedin"></i> LinkedIn</a>
+              <a href="resume.pdf" class="btn btn-success btn-sm" download><i class="bi bi-download"></i> Resume</a>
+            </div>
+          </div>
+
+          <div class="mt-4 text-white-50 small">
+            <i class="bi bi-geo-alt-fill"></i> Amravati, India
+            <i class="bi bi-phone-fill"></i> +91 7620357101
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="mb-3">About Me</h2>
+          <p class="lead text-muted">I am a curious MCA student at PR Pote Patil College of Engineering & Management. I build responsive web apps and create data-driven dashboards. I enjoy learning new tech and solving real problems through code.</p>
+
+          <ul class="list-inline mt-3">
+            <li class="list-inline-item me-4"><strong>Course:</strong> MCA (3rd Sem)</li>
+            <li class="list-inline-item me-4"><strong>Graduation:</strong> 2026</li>
+            <li class="list-inline-item"><strong>Location:</strong> Amravati, India</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title">Quick Facts</h5>
+              <p class="card-text text-muted mb-2">Enthusiastic about Frontend, Data Analysis & small AI projects. Comfortable with Git, Agile workflows, and collaborative teams.</p>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="badge bg-primary">MERN</span>
+                <span class="badge bg-success">Python</span>
+                <span class="badge bg-warning text-dark">JavaScript</span>
+                <span class="badge bg-info text-dark">HTML & CSS</span>
+                <span class="badge bg-secondary">SQL</span>
+                <span class="badge bg-dark">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Skills</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="skill">
+          <h6>HTML & CSS</h6>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="skill mt-3">
+          <h6>Python</h6>
+          <div class="stars">⭐⭐⭐⭐</div>
+        </div>
+        <div class="skill mt-3">
+          <h6>Bootstrap</h6>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="skill">
+          <h6>React (Beginner)</h6>
+          <div class="stars">⭐⭐⭐</div>
+        </div>
+        <div class="skill mt-3">
+          <h6>Data Analysis</h6>
+          <div class="stars">⭐⭐⭐⭐</div>
+        </div>
+        <div class="skill mt-3">
+          <h6>SQL</h6>
+          <div class="stars">⭐⭐⭐⭐</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+
+      <div class="row g-4">
+        <!-- Project card -->
+        <div class="col-md-4">
+          <div class="card project-card h-100 shadow-sm">
+            <img src="https://picsum.photos/seed/aiimg/800/450" class="card-img-top" alt="AI Image Generator">
+            <div class="card-body">
+              <h5 class="card-title">AI Image Generator</h5>
+              <p class="card-text text-muted">Generate images from text prompts using local model integration experiments.</p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" href="#projectModal1">Details</a>
+                <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project card -->
+        <div class="col-md-4">
+          <div class="card project-card h-100 shadow-sm">
+            <img src="https://picsum.photos/seed/dashboard/800/450" class="card-img-top" alt="Data Dashboard">
+            <div class="card-body">
+              <h5 class="card-title">Data Dashboard</h5>
+              <p class="card-text text-muted">Interactive dashboard with charts and filters for business metrics.</p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" href="#projectModal2">Details</a>
+                <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project card -->
+        <div class="col-md-4">
+          <div class="card project-card h-100 shadow-sm">
+            <img src="https://picsum.photos/seed/portfolio/800/450" class="card-img-top" alt="Portfolio">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Website</h5>
+              <p class="card-text text-muted">This portfolio built with HTML, CSS, JS and Bootstrap — responsive & accessible.</p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" href="#projectModal3">Details</a>
+                <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT MODALS (examples) -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-4">
+          <h5 class="mb-3">AI Image Generator</h5>
+          <p class="text-muted">Short explanation, tech stack, and link to repo. Replace this text with your real project description.</p>
+          <ul>
+            <li>Tech: HTML, CSS, JS, Python (backend experiments)</li>
+            <li>Key features: Text -> Image, prompt history, download</li>
+          </ul>
+          <div class="text-end">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="#" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-4">
+          <h5 class="mb-3">Data Dashboard</h5>
+          <p class="text-muted">Interactive charts, filters, and data sources. Replace with your details.</p>
+          <div class="text-end">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="#" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-4">
+          <h5 class="mb-3">Portfolio Website</h5>
+          <p class="text-muted">This very site. Notes about structure, dependencies and how to run it locally.</p>
+          <div class="text-end">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="#" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+
+      <div class="row gy-4">
+        <div class="col-lg-5">
+          <div class="card bg-white text-dark shadow-sm border-0">
+            <div class="card-body">
+              <h5>Let's Connect</h5>
+              <p class="mb-2">Email: <strong id="karanbabar83@gmail.com">karanbabar83@gmail.com</strong></p>
+              <p class="mb-1">LinkedIn: <a href="https://www.linkedin.com/in/karan-kpb9101/" target="_blank" rel="noopener noreferrer">linkedin.com/in/karan-kpb9101</a></p>
+              <p>GitHub: <a href="https://github.com/Karankpb09" target="_blank" rel="noopener noreferrer">github.com/karankpb09</a></p>
+
+              <div class="mt-3 d-flex gap-2">
+                <button id="copyEmailBtnBottom" class="btn btn-outline-dark btn-sm"><i class="bi bi-clipboard"></i> Copy Email</button>
+                <a href="karanbabar83@gmail.com" class="btn btn-dark btn-sm"><i class="bi bi-envelope"></i> Send Email</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="mb-3">Send a Message</h5>
+              <form id="contactForm" novalidate>
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" required>
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" required>
+                  <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="4" required></textarea>
+                  <div class="invalid-feedback">Please add a short message.</div>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+                <div id="contactAlert" class="mt-3 d-none alert alert-success">Thanks! Message prepared — your email client will open.</div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Connect Button -->
+  <a href="#contact" class="floating-connect" aria-label="Connect with me"><i class="bi bi-chat-dots-fill"></i></a>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top shadow-lg" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-white">
+    <div class="container">
+      <small class="text-muted">© <span id="year">2025</span> Karan Babar • Built with ❤️ & Bootstrap</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (bundle includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

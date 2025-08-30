@@ -1,0 +1,155 @@
+:root{
+  --accent: #00c6ff;
+  --accent-dark: #007bff;
+  --bg: #0f1724;
+  --card-bg: #ffffff;
+  --muted: #6c757d;
+}
+
+/* Basic reset & typography */
+* { box-sizing: border-box; }
+body {
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.5;
+  margin: 0;
+  background: linear-gradient(180deg, rgba(245,247,250,1) 0%, rgba(238,246,255,1) 100%);
+  color: #111827;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar */
+.navbar { background: rgba(12, 18, 30, 0.96); }
+.navbar .nav-link { color: rgba(255,255,255,0.85); }
+.navbar .nav-link:hover { color: var(--accent); }
+
+/* HERO */
+.hero-section{
+  background: linear-gradient(120deg, rgba(0,118,255,0.95), rgba(0,198,255,0.9));
+  color: #fff;
+  padding-top: 110px;
+  padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section .accent { color: #fff; background: rgba(255,255,255,0.08); padding: 4px 8px; border-radius: 6px; }
+
+/* Profile image and glow */
+.profile-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid rgba(255,255,255,0.9);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: block;
+}
+.profile-img:hover { transform: translateY(-6px) scale(1.03); }
+
+.profile-glow {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow:
+    0 6px 25px rgba(0,0,0,0.25),
+    0 0 80px rgba(0,198,255,0.35),
+    inset 0 2px 8px rgba(255,255,255,0.06);
+}
+
+/* Buttons in hero - pill style */
+.social-links .btn, .hero-section .btn {
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Typewriter style (JS will fill text) */
+.typewriter {
+  display:inline-block;
+  font-weight:600;
+  min-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid rgba(255,255,255,0.8);
+}
+
+/* Sections spacing */
+section { padding-top: 60px; padding-bottom: 60px; opacity: 0; transform: translateY(18px); transition: opacity .9s ease, transform .9s ease; }
+section.fade-in { opacity:1; transform: translateY(0); }
+
+/* Cards & projects */
+.card { border-radius: 12px; }
+.project-card img { border-top-left-radius: 12px; border-top-right-radius: 12px; height:170px; object-fit:cover; }
+
+/* Hover lift on cards */
+.project-card:hover { transform: translateY(-8px); transition: transform .25s ease; }
+
+/* Progress bars style */
+.progress { height: 12px; background: #e9ecef; border-radius: 999px; overflow: hidden; box-shadow: inset 0 1px 2px rgba(0,0,0,0.06); }
+.progress-bar { transition: width 1.2s ease; font-weight:600; }
+
+/* Floating connect */
+.floating-connect {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  background: var(--accent);
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: 0 12px 30px rgba(0,198,255,0.22);
+  z-index: 1050;
+  transition: transform .2s ease;
+}
+.floating-connect:hover { transform: scale(1.07); }
+
+.stars {
+  font-size: 1.2rem;
+  color: gold;
+  letter-spacing: 2px;
+}
+
+.skill h6 {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Back to top */
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  z-index: 1050;
+}
+
+/* Contact section specifics */
+#contact { background: linear-gradient(180deg, #0b1220 0%, #07121a 100%); color: #e6eef8; }
+
+/* Footer */
+footer { background: transparent; }
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .profile-img { width: 200px; height: 200px; }
+  .hero-section { padding-top: 90px; padding-bottom: 60px; text-align:center; }
+}
+
+/* Dark theme (applied via JS) */
+body.dark {
+  background: linear-gradient(180deg, #020617 0%, #071124 100%);
+  color: #dbeafe;
+}
+body.dark .navbar { background: rgba(2,6,23,0.98); }
+body.dark .card { background: #071124; color: #dbeafe; }
+body.dark .progress { background: rgba(255,255,255,0.06); }
